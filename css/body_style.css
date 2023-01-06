@@ -31,18 +31,85 @@
 
 /* About Page */
 .headshot{
-  border-radius: 50%;
-  width: 25rem;
+  border-radius: 100%;
+  width: 30rem;
   float: left;
-  padding-right: 2rem;
-  padding-bottom: 2rem;
-
+  shape-outside: circle(50%);
+  margin-right: 2rem;
 }
 
 .about-body{
   color: var(--white);
   font-size: 2rem;
+  padding: 2rem;
 }
+
+.section-title{
+  color: var(--brand-blue);
+  padding: 0 5rem;
+  padding-bottom: 1.125rem;
+}
+
+.skills-container{
+  padding: 0 2rem;
+  padding-bottom: 2rem;
+}
+
+.skill-name{
+  font-size: 2rem;
+}
+
+.details{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.bar{
+  position: relative;
+  border: 2px solid var(--brand-blue);
+  border-radius: 20px;
+}
+
+.bar div{
+  position: relative;
+  width: 0;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: var(--brand-blue);
+}
+
+.skills:not(:last-child){
+  margin-bottom: 2rem;
+}
+
+#first-bar{
+  animation: first-fill 2s forwards;
+}
+@keyframes first-fill{
+  100%{
+    width: 80%;
+  }
+}
+#second-bar{
+  animation: second-fill 2s forwards;
+}
+@keyframes second-fill{
+  100%{
+    width: 70%;
+  }
+}
+#third-bar{
+  animation: third-fill 2s forwards;
+}
+@keyframes third-fill{
+  100%{
+    width: 50%;
+  }
+}
+
+
 
 /* Contact Page */
 .map{
