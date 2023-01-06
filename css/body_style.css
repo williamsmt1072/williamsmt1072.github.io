@@ -9,6 +9,8 @@
     --brand-grey: hsl(0, 0%, 71%);
     --button: hsl(192, 100%, 33%);
     --button-hover: hsla(192, 100%, 33%, 0.7);
+    --light-shadow: hsla(0, 0%, 100%, 0.5);
+    --brand-shadow: hsla(198, 86%, 51%, 0.5);
 }
 
 .main-section{
@@ -24,11 +26,14 @@
 .page-name{
   color: var(--brand-blue);
   padding: 0 5rem;
+  padding-bottom: 1.125rem;
 }
 
 .map{
   width: 100%;
   height: 30rem;
+  border-radius: 20px;
+  box-shadow: 3px 5px 8px 0 var(--black);
 }
 
 .box {
@@ -39,7 +44,8 @@
   text-decoration: none;
   color: var(--black);
   border-radius: 25px;
-  transition: background-color 1s ease-out 10ms;
+  box-shadow: 3px 5px 8px 0 var(--light-shadow);
+  transition: 1s ease-out 10ms;
 }
 
 .box.lower{
@@ -50,6 +56,8 @@
   background-color: var(--brand-blue);
   text-decoration: none;
   cursor: pointer;
+  color: var(--white);
+  box-shadow: 3px 5px 8px 0 var(--brand-shadow);
 }
 
 .box h3 {
@@ -68,6 +76,7 @@
 }
 
 #box-space{
+  padding-top: 2rem;
   padding-bottom: 2rem;
 }
 
