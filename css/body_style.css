@@ -13,6 +13,10 @@
     --brand-shadow: hsla(198, 86%, 51%, 0.5);
 }
 
+hr{
+  padding: 1rem 0;
+}
+
 .main-section{
   color: var(--brand-blue);
   padding: 1rem 5rem;
@@ -50,7 +54,22 @@
   padding-bottom: 1.125rem;
 }
 
+.code-section{
+  padding: 1rem 0;
+}
+.software-section{
+  padding: 1rem 0;
+}
+
+.skill-main{
+  display: flex;
+}
+
 .skills-container{
+  width: 45%;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0 2rem;
   padding-bottom: 2rem;
 }
@@ -83,32 +102,71 @@
 .skills:not(:last-child){
   margin-bottom: 2rem;
 }
-
-#first-bar{
-  animation: first-fill 2s forwards;
+/* skills bar settings */
+#cfirst-bar{
+  animation: cfirst-fill 2s forwards;
 }
-@keyframes first-fill{
+@keyframes cfirst-fill{
+  100%{
+    width: 85%;
+  }
+}
+#csecond-bar{
+  animation: csecond-fill 2s forwards;
+}
+@keyframes csecond-fill{
   100%{
     width: 80%;
   }
 }
-#second-bar{
-  animation: second-fill 2s forwards;
+#cthird-bar{
+  animation: cthird-fill 2s forwards;
 }
-@keyframes second-fill{
-  100%{
-    width: 70%;
-  }
-}
-#third-bar{
-  animation: third-fill 2s forwards;
-}
-@keyframes third-fill{
+@keyframes cthird-fill{
   100%{
     width: 50%;
   }
 }
-
+#cfourth-bar{
+  animation: cfourth-fill 2s forwards;
+}
+@keyframes cfourth-fill{
+  100%{
+    width: 40%;
+  }
+}
+#sfirst-bar{
+  animation: sfirst-fill 2s forwards;
+}
+@keyframes sfirst-fill{
+  100%{
+    width: 90%;
+  }
+}
+#ssecond-bar{
+  animation: ssecond-fill 2s forwards;
+}
+@keyframes ssecond-fill{
+  100%{
+    width: 90%;
+  }
+}
+#sthird-bar{
+  animation: sthird-fill 2s forwards;
+}
+@keyframes sthird-fill{
+  100%{
+    width: 50%;
+  }
+}
+#sfourth-bar{
+  animation: sfourth-fill 2s forwards;
+}
+@keyframes sfourth-fill{
+  100%{
+    width: 40%;
+  }
+}
 
 
 /* Contact Page */
